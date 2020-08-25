@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
+    ></script>
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="public/css/materialize.min.css"
+      media="screen,projection"
+    />
+    <link type="text/css" rel="stylesheet" href="public/css/main.css" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="public/img/mountain.ico" />
+    <title>HoughWorks</title>
+  </head>
+
+  <body class="scrollspy">
+    <!-- Header -->
+    <header class="main-header">
+      <nav class="transparent">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#home" class="brand-logo">HoughWorks</a>
+            <a href="#" data-activates="mobile-nav" class="button-collapse">
+              <i class="fa fa-bars"></i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li>
+                <a href="#index" class="active-link">Home</a>
+              </li>
+              <li>
+                <a class="blue-grey-text text-darken-4" href="#work">Work</a>
+              </li>
+              <li>
+                <a class="blue-grey-text text-darken-4" href="#contact"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a class="blue-grey-text text-darken-4" href="#about">About</a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/erikhough42/"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin blue-grey-text text-darken-4"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/eriktheredhead" target="_blank">
+                  <i class="fab fa-github blue-grey-text text-darken-4"></i>
+                </a>
+              </li>
+            </ul>
+            <ul class="side-nav" id="mobile-nav">
+              <h4 class="blue-grey-text text-darken-4 center">HoughWorks</h4>
+              <li>
+                <div class="divider"></div>
+              </li>
+              <li>
+                <a href="#index">
+                  <i class="fa fa-home grey-text text-darken-4"></i> Home</a
+                >
+              </li>
+              <li>
+                <a href="#work">
+                  <i class="fa fa-cog grey-text text-darken-4"></i> Work</a
+                >
+              </li>
+              <li>
+                <a href="#contact">
+                  <i class="far fa-envelope grey-text text-darken-4"></i>
+                  Contact</a
+                >
+              </li>
+              <li>
+                <a href="#about">
+                  <i class="fas fa-book grey-text text-darken-4"></i> About</a
+                >
+              </li>
+              <li>
+                <div class="divider"></div>
+              </li>
+              <li><a href="#" class="btn blue-grey">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- showcase -->
+      <div class="showcase container">
+        <div class="row">
+          <div class="col s12 m10 offset-m1">
+            <h5>Welcome to HoughWorks</h5>
+            <h1>WebDev Services</h1>
+            <p>
+              Full-Stack Web Developer based in Denver, CO
+            </p>
+            <br /><br />
+            <a href="#work" class="btn btn-large white blue-grey-text"
+              >See My Work</a
+            >
+            <a href="#contact" class="btn btn-large blue-grey white-text"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Section: Icon Boxes -->
+    <section class="section section-icons center">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="card-panel">
+              <i
+                class="fa fa-arrows-alt fa-3x blue-grey-text text-darken-2"
+              ></i>
+              <h5 class="grey-text text-darken-4">Intuitive UI/UX</h5>
+              <p class="black-text">
+                Layouts that are easy to use and fun to explore.
+              </p>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card-panel">
+              <i class="fa fa-database fa-3x blue-grey-text text-darken-2"></i>
+              <h5 class="grey-text text-darken-4">Responsive Design</h5>
+              <p class="black-text">
+                Websites and SPA's that look great on any screen size or device.
+              </p>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card-panel">
+              <i
+                class="fa fa-code-branch fa-3x blue-grey-text text-darken-2"
+              ></i>
+              <h5 class="grey-text text-darken-4">Modern Development</h5>
+              <p class="black-text">
+                Leveraging the latest technologies to deliver websites that
+                dazzle and amaze.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section: main -->
+    <section id="work" class="section section-main scrollspy">
+      <div class="container">
+        <!-- row 1 -->
+        <div class="row row-1">
+          <div class="col m6 hide-on-small-only">
+            <div class="img-content">
+              <h3>Prometheus</h3>
+              A new social network aimed at eliminating barriers of entry into
+              the comic book industry. Prometheus is a place for writers,
+              artists and other comic-creatives to meet and collaborate with one
+              another to create a more inclusive Comic Book industry. Website
+              built with the MERN stack.
+            </div>
+          </div>
+          <div class="col m6">
+            <div class="card">
+              <div class="card-image">
+                <img src="public/img/gallery/prometheusSmall.png" alt="" />
+                <span class="card-title">Prometheus</span>
+                <a
+                  href="#prometheus"
+                  class="btn-floating halfway-fab waves-effect waves-light blue-grey darken-2 modal-trigger"
+                >
+                  <i class="material-icons">add</i>
+                </a>
+              </div>
+              <div class="card-content">
+                <p>
+                  <a
+                    href="https://peaceful-savannah-16698.herokuapp.com/"
+                    target="_blank"
+                    >Visit the Site</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Row 2 -->
+        <div class="row row-2">
+          <div class="col m6">
+            <div class="card">
+              <div class="card-image">
+                <img src="public/img/gallery/beq2pecsmaller.jpg" alt="" />
+                <span class="card-title">bEQ2PEC</span>
+                <a
+                  href="#beq2pec"
+                  class="btn-floating halfway-fab waves-effect waves-light blue-grey darken-2 modal-trigger"
+                >
+                  <i class="material-icons">add</i>
+                </a>
+              </div>
+              <div class="card-content">
+                <p>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star_half</i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col m6 hide-on-small-only">
+            <div class="img-content">
+              <h3>bEQ2PEC</h3>
+              A simple Website I designed and built for a friend's Petroleum
+              Engineering Consulting Firm. Designed in Adobe XD and built with
+              the MaterializeCSS framework.
+            </div>
+          </div>
+        </div>
+        <!-- row 3 -->
+        <div class="row row-3">
+          <div class="col m6 hide-on-small-only">
+            <div class="img-content">
+              <h3>PostWorld</h3>
+              A very simple project demonstrating user authentication and post
+              functionality. Built in React and Hosted on Firebase.
+            </div>
+          </div>
+          <div class="col m6">
+            <div class="card">
+              <div class="card-image">
+                <img src="public/img/gallery/postworldsmaller.png" alt="" />
+                <span class="card-title">PostWorld</span>
+                <a
+                  href="#postworld"
+                  class="btn-floating halfway-fab waves-effect waves-light blue-grey darken-2 modal-trigger"
+                >
+                  <i class="material-icons">add</i>
+                </a>
+              </div>
+              <div class="card-content">
+                <p>
+                  <a
+                    href="https://net-ninja-marioplan-5675a.web.app/"
+                    target="_blank"
+                    >Visit the Site</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section: Languages -->
+    <section class="section section-language blue-grey lighten-4">
+      <div class="container">
+        <div class="row">
+          <h4 class="center">
+            Working Primarily With The
+            <span class="green-text text-darken-1"> MERN</span> Stack
+          </h4>
+          <br /><br />
+          <div class="row">
+            <div class="col s3">
+              <img
+                src="public/img/mongodb-logo.png"
+                alt=""
+                class="responsive-img"
+              />
+            </div>
+            <div class="col s3">
+              <img
+                src="public/img/express-logo.png"
+                alt=""
+                class="responsive-img"
+              />
+            </div>
+            <div class="col s3">
+              <img
+                src="public/img/react-logo.png"
+                alt=""
+                class="responsive-img"
+              />
+            </div>
+            <div class="col s3">
+              <img
+                src="public/img/node-logo.png"
+                alt=""
+                class="responsive-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section: contact -->
+    <section id="contact" class="section section-contact scrollspy">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="card-panel blue-grey white-text center">
+              <i class="material-icons medium">email</i>
+              <h5>Contact Me for a Project Quote</h5>
+              <p>
+                I offer UI/UX design, Front End or Backend Development, as well
+                as Fullstack Web Development. I Love helping entrepreneurs and
+                small businesses grow their client base with beautiful,
+                functional websites.
+              </p>
+            </div>
+            <img
+              src="public/img/designSmaller.png"
+              class="materialboxed z-depth-2"
+              width="100%"
+            />
+          </div>
+          <form>
+            <div class="col s12 m6">
+              <div class="card-panel grey lighten-3 black-text text-lighten-3">
+                <h5 class="center">Let's Make Something Great</h5>
+                <br />
+                <div class="input-field required">
+                  <input type="text" id="name" />
+                  <label for="name">Name</label>
+                </div>
+                <div class="input-field required">
+                  <input type="email" id="email" class="validate" />
+                  <label for="email">Email</label>
+                </div>
+                <div class="input-field required">
+                  <input type="text" id="phone" />
+                  <label for="phone">Phone</label>
+                </div>
+                <div class="input-field required">
+                  <textarea
+                    class="materialize-textarea"
+                    placeholder="Enter Message"
+                    id="message"
+                  ></textarea>
+                  <label for="message"></label>
+                </div>
+                <input type="submit" value="Submit" class="btn" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: About -->
+
+    <section id="about" class="section section-about grey lighten-4 scrollspy">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m6">
+            <img
+              src="public/img/beachProfileSmall.jpg"
+              class="circle responsive-img"
+              alt=""
+            />
+          </div>
+          <div class="col s12 m6">
+            <h3><span class="blue-grey-text text-darken-1">About</span> Me</h3>
+            <p class="flow-text">
+              I am a Freelance Web Developer based in Denver, CO. I work
+              primarily with the MERN stack (MongoDB, Express, React, and
+              Node.js). I enjoy working closely with my clients to deliver
+              clean, elegant websites that draw visitors in. In my spare time I
+              play guitar, travel, and learn new things.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section: Footer -->
+
+    <footer class="section page-footer darken-4 white-text center">
+      <p class="flow-text">Hough Works &copy; 2020</p>
+    </footer>
+
+    <!-- Modal 1 -->
+    <div id="prometheus" class="modal">
+      <div class="modal-content">
+        <h4>Prometheus</h4>
+        <img
+          src="public/img/gallery/prometheusSmall.png"
+          alt=""
+          class="responsive-img"
+        />
+        A new social network aimed at eliminating barriers of entry into the
+        comic book industry. Prometheus is a place for writers, artists and
+        other comic-creatives to meet and collaborate with one another to create
+        a more inclusive Comic Book industry. Website built with the MERN stack.
+      </div>
+      <div class="modal-footer">
+        <p>
+          <a
+            href="https://peaceful-savannah-16698.herokuapp.com/"
+            target="_blank"
+            >Visit the Site</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="beq2pec" class="modal">
+      <div class="modal-content">
+        <h4>bEQ2PEC</h4>
+        <img
+          src="public/img/gallery/beq2pecsmaller.jpg"
+          alt=""
+          class="responsive-img"
+        />
+        A simple Website I designed and built for a friend's Petroleum
+        Engineering Consulting Firm. Designed in Adobe XD and built with the
+        MaterializeCSS framework.
+      </div>
+      <div class="modal-footer">
+        <p>
+          <i class="material-icons">star</i>
+          <i class="material-icons">star</i>
+          <i class="material-icons">star</i>
+          <i class="material-icons">star</i>
+          <i class="material-icons">star_half</i>
+        </p>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div id="postworld" class="modal">
+      <div class="modal-content">
+        <h4>PostWorld</h4>
+        <img
+          src="public/img/gallery/postworldsmaller.png"
+          alt=""
+          class="responsive-img"
+        />
+        A very simple project demonstrating user authentication and post
+        functionality. Built in React and Hosted on Firebase.
+      </div>
+      <div class="modal-footer">
+        <p>
+          <a href="https://net-ninja-marioplan-5675a.web.app/" target="_blank"
+            >Visit the Site</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <!--Import jQuery before materialize.js-->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="public/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        //INIT Sidenav
+        $('.button-collapse').sideNav();
+
+        //INIT MODAL
+        $('.modal').modal();
+
+        //INIT scrollspy
+        $('.scrollspy').scrollSpy();
+
+        //SCrollfire
+        const options = [
+          {
+            selector: '.row-1',
+            offset: 50,
+            callback: function (el) {
+              Materialize.fadeInImage($(el));
+            },
+          },
+          {
+            selector: '.row-2',
+            offset: 300,
+            callback: function (el) {
+              Materialize.fadeInImage($(el));
+            },
+          },
+          {
+            selector: '.row-3',
+            offset: 400,
+            callback: function (el) {
+              Materialize.fadeInImage($(el));
+            },
+          },
+        ];
+
+        Materialize.scrollFire(options);
+
+        $('form').on('submit', e => {
+          e.preventDefault();
+
+          const name = $('#name').val().trim();
+          const email = $('#email').val().trim();
+          const phone = $('#phone').val().trim();
+          const message = $('#message').val().trim();
+
+          const data = {
+            name,
+            email,
+            phone,
+            message,
+          };
+
+          $.post('/email', data, function () {
+            console.log('Server received our data');
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
