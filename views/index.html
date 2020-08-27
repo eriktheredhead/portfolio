@@ -129,16 +129,19 @@
               <i
                 class="fa fa-arrows-alt fa-3x blue-grey-text text-darken-2"
               ></i>
-              <h5 class="grey-text text-darken-4">Intuitive UI/UX</h5>
+              <h5 class="grey-text text-darken-4">
+                Intuitive UI/UX Design
+              </h5>
               <p class="black-text">
-                Layouts that are easy to use and fun to explore.
+                I build Web and Mobile apps that are easy to use and fun to
+                explore.
               </p>
             </div>
           </div>
           <div class="col s12 m4">
             <div class="card-panel">
               <i class="fa fa-database fa-3x blue-grey-text text-darken-2"></i>
-              <h5 class="grey-text text-darken-4">Responsive Design</h5>
+              <h5 class="grey-text text-darken-4">Responsive Formats</h5>
               <p class="black-text">
                 Websites and SPA's that look great on any screen size or device.
               </p>
@@ -151,8 +154,7 @@
               ></i>
               <h5 class="grey-text text-darken-4">Modern Development</h5>
               <p class="black-text">
-                Leveraging the latest technologies to deliver websites that
-                dazzle and amaze.
+                Clean, intuitive layouts that boost your brand presence.
               </p>
             </div>
           </div>
@@ -347,14 +349,14 @@
                   <label for="email">Email</label>
                 </div>
                 <div class="input-field required">
-                  <input type="text" id="phone" />
-                  <label for="phone">Phone</label>
+                  <input type="text" id="subject" />
+                  <label for="subject">Subject</label>
                 </div>
                 <div class="input-field required">
                   <textarea
                     class="materialize-textarea"
                     placeholder="Enter Message"
-                    id="message"
+                    id="text"
                   ></textarea>
                   <label for="message"></label>
                 </div>
@@ -517,14 +519,14 @@
 
           const name = $('#name').val().trim();
           const email = $('#email').val().trim();
-          const phone = $('#phone').val().trim();
-          const message = $('#message').val().trim();
+          const subject = $('#subject').val().trim();
+          const text = $('#text').val().trim();
 
           const data = {
             name,
             email,
-            phone,
-            message,
+            subject,
+            text,
           };
 
           $.post('/email', data, function () {

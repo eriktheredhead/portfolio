@@ -1,6 +1,7 @@
+require('dotenv').config();
 const express = require('express');
-const nodemailer = require('nodemailer');
 const path = require('path');
+const sendMail = require('./mail.js');
 const app = express();
 const log = console.log;
 
@@ -13,11 +14,18 @@ app.use('/public', express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
+//name, email, phone, message
 app.post('/email', (req, res) => {
-  //TODO:
-  // send email here
+  const { from, email, subject, text } = req.body;
   log('Data: ', req.body);
-  res.json({ message: 'Message received!!' });
+
+  sendMail(from, email, subject, text, (err, data) => {
+    if (err) {
+      res.status(500).json({ message: 'Internal Error' });
+    } else {
+      res.json({ message: 'Email sent!!!' });
+    }
+  });
 });
 
 app.get('/', (req, res) => {
@@ -25,7 +33,3 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => log('Server started on PORT: ', 3000));
-
-// const PORT = process.env.PORT || 5000;
-
-// app.listen(PORT, () => console.log(`Server started on port ${PORT}`));

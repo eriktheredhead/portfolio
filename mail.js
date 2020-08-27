@@ -1,53 +1,36 @@
+require('dotenv').config();
+
 const nodemailer = require('nodemailer');
-const mailGun = require('nodemailer-mailgun-transport');
-const mailgun = require('mailgun-js');
-const DOMAIN = 'sandbox2f47e43b44d04cc6af526435410569dc.mailgun.org';
 
-const auth = mailgun({
-  api_key: '06fb8f0cb6029045b93ee2088fe86047-4d640632-1cc25e79',
-  domain: DOMAIN,
+// Step 1: transporter
+let transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: process.env.EMAIL,
+    pass: process.env.PASSWORD,
+  },
 });
 
-const transporter = nodemailer.createTransport(mailGun(auth));
+const sendMail = (name, email, subject, text, cb) => {
+  // Step 2:
+  let mailOptions = {
+    from: {
+      name,
+      email,
+    },
+    to: 'houghworksweb@gmail.com',
+    subject,
+    text,
+  };
 
-const mailOptions = {
-  from: 'erikhough03@gmail.com',
-  to: 'erikhough03@gmail.com',
-  subject: 'Hello',
-  text: 'Testing some Mailgun awesomness!',
+  // Step 3:
+  transporter.sendMail(mailOptions, (err, data) => {
+    if (err) {
+      cb(err, null);
+    } else {
+      cb(null, data);
+    }
+  });
 };
-// auth.messages().send(data, function (err, body) {
-//   console.log(body);
-// });
 
-transporter.sendMail(mailOptions, function (err, data) {
-  if (err) {
-    console.log('Error in Sending');
-  } else {
-    console.log('Message sent!!');
-  }
-});
-
-// const auth = {
-//   auth: {
-//     api_key: 'key-06fb8f0cb6029045b93ee2088fe86047-4d640632-1cc25e79',
-//     domain: 'sandbox2f47e43b44d04cc6af526435410569dc.mailgun.org',
-//   },
-// };
-
-//
-
-// const mailOptions = {
-//   from: 'postmaster@sandbox2f47e43b44d04cc6af526435410569dc.mailgun.org',
-//   to: 'erikhough03@gmail.com',
-//   phone: '2816841810',
-//   message: 'whats ups dawg',
-// };
-
-// transporter.sendMail(mailOptions, function (err, data) {
-//   if (err) {
-//     console.log('Error in Sending');
-//   } else {
-//     console.log('Message sent!!');
-//   }
-// });
+module.exports = sendMail;
