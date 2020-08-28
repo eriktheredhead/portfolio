@@ -5,7 +5,7 @@ const nodemailer = require('nodemailer');
 const app = express();
 const log = console.log;
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 //Static folder
 app.use('/public', express.static(path.join(__dirname, 'public')));
@@ -66,4 +66,4 @@ app.post('/email', (req, res) => {
   });
 });
 
-app.listen(PORT, () => log('Server started on PORT: ', 3000));
+app.listen(PORT, () => log(`Server started on port ${PORT}`));
