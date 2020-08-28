@@ -2,5 +2,10 @@
   "name": "HoughWorks Portfolio page",
   "description": "MY portfolio website",
   "repository": "https://git.heroku.com/houghworks.git",
-  "website": "https://houghworks.com"
+  "website": "https://houghworks.com",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
 }
